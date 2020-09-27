@@ -1,0 +1,37 @@
+ul.okr-list {
+  list-style: none;
+}
+
+li.parent-objective {
+  padding: 10px;
+  margin:10px;
+}
+.okr-list-item {
+  display: inline-block;
+}
+.children-objectives {
+  &.hide {
+    display: none;
+  }
+}
+
+.drop-down {
+  margin-right: 10px;
+}
+ul.children-objectives {
+  list-style-type: lower-alpha;
+  margin-left: 50px;
+  padding: 0px;
+  width: 70%;
+}
+
+.drop-down-section {
+  position: absolute;
+}
+
+.parent-item {
+  display: inline-block;
+}
+.okr-list-item {
+  margin-left: 30px;
+}
