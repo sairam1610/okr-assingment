@@ -1,37 +1,32 @@
 ul.okr-list {
   list-style: none;
-}
-
-li.parent-objective {
-  padding: 10px;
-  margin:10px;
-}
-.okr-list-item {
-  display: inline-block;
-}
-.children-objectives {
-  &.hide {
-    display: none;
+  width: 40%;
+  li {
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #f7f7f7;
   }
 }
-
-.drop-down {
-  margin-right: 10px;
-}
-ul.children-objectives {
-  list-style-type: lower-alpha;
-  margin-left: 50px;
-  padding: 0px;
-  width: 70%;
-}
-
 .drop-down-section {
   position: absolute;
 }
-
-.parent-item {
-  display: inline-block;
-}
 .okr-list-item {
   margin-left: 30px;
+}
+ul.children-objectives {
+  list-style: none;
+  list-style-type: lower-alpha;
+  margin: 0px;
+  padding: 0px;
+  li {
+    margin: 5px;
+    padding: 5px;
+    background: #eeeeee;
+  }
+  li:nth-child(odd) {
+    background: white;
+  }
+}
+.hide {
+  display: none;
 }
