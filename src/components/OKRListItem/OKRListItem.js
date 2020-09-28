@@ -19,7 +19,7 @@ export class OKRListItem extends Component {
                             <span className="drop-down" onClick={()=>{this.toggleClick()}}>&#9660;</span>:
                             <span className="drop-down" onClick={()=>{this.toggleClick()}}>&#9650;</span>}</div>
                         <div className="okr-list-item">
-                            <div className="parent-title"> {this.props.objective.title}</div>
+                            <div className="parent-title" onClick={()=>{this.toggleClick()}}> {this.props.objective.title}</div>
                             <ul className={`children-objectives ${this.state.show ? "" : "hide"}`}>
                                 {this.props.objective.children.map((childrenObjective)=>{
                                     return <li className="children-title">{childrenObjective.title}></li>
